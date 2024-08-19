@@ -11,10 +11,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: ThemeData(
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+           backgroundColor: Colors.grey[900], 
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white70,
+           )
+      ),
       debugShowMaterialGrid: false,
       debugShowCheckedModeBanner: false,
-      home: Home(), 
+      home: const Home(), 
     );
   }
 }
