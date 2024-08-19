@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/pages/botnavbar.dart';
+import 'package:mobile_app/pages/food.dart';
 import 'day_split.dart';
 
 class Plans extends StatelessWidget {
@@ -37,7 +38,7 @@ class Plans extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (BuildContext context) {
-                  return const DaySplit();
+                  return const Food();
                 }));
               },
               style: ElevatedButton.styleFrom(
